@@ -195,6 +195,4 @@ Ya sea para automatizar tu flujo de desarrollo, gestionar infraestructura o simp
 - **Comunidad**: [Discord OpenClaw](https://discord.com/invite/clawd)
 - **Skills**: [clawhub.com](https://clawhub.com)
 
----
 
-¿Has trabajado con agentes de IA? ¿Qué casos de uso te parecen más interesantes? Comparte tu experiencia en los comentarios.
