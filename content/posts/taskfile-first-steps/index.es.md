@@ -1,19 +1,21 @@
 ---
-title: 'Taskfile: instalación, primeros pasos y estructura de tareas'
+title: "Taskfile: instalación y primeros pasos"
 date: 2026-03-09
 draft: false
-tags: ['taskfile', 'task', 'automatizacion', 'devtools']
-categories: ['DevOps', 'Productividad']
+tags: ["taskfile", "task", "automatizacion", "devtools"]
+categories: ["DevOps", "Productividad"]
 showTableOfContents: true
 ---
+
 Si haces tareas repetitivas en desarrollo (instalar dependencias, correr tests, build, deploy), **Taskfile** te ayuda a automatizarlas de forma simple y legible.
+
 <!--more-->
 
 En este artículo te dejo una guía práctica para empezar desde cero: instalación, primeros pasos y cómo estructurar tus tareas.
 
 ## ¿Qué es Taskfile?
 
-[Task](https://taskfile.dev/) es un *task runner* moderno. Su configuración vive en un archivo `Taskfile.yml`, donde defines comandos reutilizables para tu proyecto.
+[Task](https://taskfile.dev/) es un _task runner_ moderno. Su configuración vive en un archivo `Taskfile.yml`, donde defines comandos reutilizables para tu proyecto.
 
 Es similar a `Make`, pero con sintaxis YAML más amigable y enfocada en DX.
 
@@ -67,7 +69,7 @@ task --version
 Ejemplo básico:
 
 ```yaml
-version: '3'
+version: "3"
 
 tasks:
   install:
@@ -106,12 +108,12 @@ Un `Taskfile.yml` suele tener estos bloques:
 - `deps`: dependencias entre tareas.
 - `vars`: variables reutilizables.
 - `env`: variables de entorno.
-- `sources` / `generates`: control de *up-to-date* (evita ejecuciones innecesarias).
+- `sources` / `generates`: control de _up-to-date_ (evita ejecuciones innecesarias).
 
 Ejemplo más completo:
 
 ```yaml
-version: '3'
+version: "3"
 
 vars:
   APP_NAME: loan-calculator

@@ -1,12 +1,14 @@
 ---
-title: 'Taskfile: installation, first steps, and task structure'
+title: "Taskfile: installation and first steps"
 date: 2026-03-09
 draft: false
-tags: ['taskfile', 'task', 'automation', 'devtools']
-categories: ['DevOps', 'Productivity']
+tags: ["taskfile", "task", "automation", "devtools"]
+categories: ["DevOps", "Productivity"]
 showTableOfContents: true
 ---
+
 If you run repetitive development tasks (installing dependencies, running tests, building, deploying), **Taskfile** helps you automate them with a clean and readable approach.
+
 <!--more-->
 
 This guide covers the essentials: installation, first steps, and how to structure your tasks.
@@ -67,7 +69,7 @@ task --version
 Basic example:
 
 ```yaml
-version: '3'
+version: "3"
 
 tasks:
   install:
@@ -111,7 +113,7 @@ A `Taskfile.yml` usually contains these sections:
 More complete example:
 
 ```yaml
-version: '3'
+version: "3"
 
 vars:
   APP_NAME: loan-calculator
