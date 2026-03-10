@@ -173,6 +173,26 @@ En `USER.md`, especifica las prioridades y el rol del agente.
 ### 2. Mantén la Memoria Organizada
 Revisa y consolida la memoria periódicamente.
 
+**Ejemplo práctico:**
+```bash
+# Cada semana, revisa los archivos diarios del mes
+memory/
+├── 2026-03-01.md  # Deploy exitoso de API v2
+├── 2026-03-05.md  # Bug crítico corregido en auth
+├── 2026-03-08.md  # Nueva feature de notificaciones
+└── ...
+
+# Consolida lo importante en MEMORY.md
+## Proyectos
+- API v2 desplegada exitosamente el 1 de marzo
+- Sistema de auth mejorado (corregido bug de sesiones)
+
+## Lecciones Aprendidas
+- Siempre verificar tokens expirados antes de deploy
+```
+
+Esto mantiene tu memoria manejable y útil a largo plazo.
+
 ### 3. Usa Skills Específicas
 Instala solo las skills necesarias para tu caso de uso.
 
