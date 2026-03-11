@@ -1,5 +1,5 @@
 ---
-title: "Agentes de OpenClaw: Automatización Inteligente en tu Flujo de Trabajo"
+title: "Agentes de OpenClaw: Automatización inteligente en tu flujo de trabajo"
 date: 2026-03-10
 draft: false
 tags: ["openclaw", "ai", "automation", "agents"]

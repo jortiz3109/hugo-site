@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Agents: Intelligent Automation in Your Workflow"
+title: "OpenClaw Agents: Intelligent automation in your workflow"
 date: 2026-03-10
 draft: false
 tags: ["openclaw", "ai", "automation", "agents"]
