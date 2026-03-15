@@ -21,13 +21,19 @@ Piensa en OpenClaw como un asistente operativo, no solo conversacional.
 Antes de instalar:
 
 - Linux, macOS o Windows (WSL recomendado en Windows para entornos de desarrollo)
-- Node.js 22+
+- Node.js 24 recomendado (Node 22 LTS 22.16+ compatible)
 - npm o pnpm
 - Acceso a una cuenta de modelo (por ejemplo OpenAI)
 
 ## Instalación rápida
 
-Instala OpenClaw de forma global:
+Método recomendado (script oficial):
+
+```bash
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
+
+Alternativa con npm:
 
 ```bash
 npm install -g openclaw
@@ -42,12 +48,19 @@ openclaw --version
 Ejecuta el onboarding inicial:
 
 ```bash
-openclaw onboard
+openclaw onboard --install-daemon
 ```
 
 Este asistente configura elementos clave como autenticación, workspace y servicios base.
 
 ## Configuración inicial recomendada
+
+### 0) Comprobar gateway y abrir la consola
+
+```bash
+openclaw gateway status
+openclaw dashboard
+```
 
 ### 1) Verificar estado general
 
@@ -155,7 +168,7 @@ Tokens y credenciales deben guardarse de forma segura y nunca publicarse en repo
 ## Flujo recomendado para producción personal
 
 1. Instalar OpenClaw
-2. Ejecutar `onboard`
+2. Ejecutar `onboard --install-daemon`
 3. Validar con `status --deep`
 4. Correr `security audit --deep`
 5. Configurar canales y políticas mínimas
